@@ -8,6 +8,12 @@ require "active_resource/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
+  #  Rails.env.test?  && defined?(Spork) && Spork.using_spork?
+  # initializer :after => :initialize_dependency_mechanism do
+  #   ActiveSupport::Dependencies.mechanism = :load
+  # end
+  # d
+
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require *Rails.groups(:assets => %w(development test))
