@@ -27,4 +27,8 @@ Sample::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+	#Ensure that log level is set to capture ALL messages (from Stack Overflow)
+	config.log_level = :debug
+
 end
