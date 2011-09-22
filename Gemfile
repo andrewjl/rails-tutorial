@@ -8,6 +8,9 @@ gem 'rails', '3.1.0'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'pg'
 
+# sqlite3 gem is stricly for testing, comment out before committing
+gem 'sqlite3'
+
 group :development do
   gem 'rspec-rails', '2.6.1'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
