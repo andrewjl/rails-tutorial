@@ -1,5 +1,12 @@
 source 'http://rubygems.org'
+group :development do
+  gem 'rspec-rails', '2.6.1'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+end
 
+group :test do
+  gem 'rspec-rails', '2.6.1'
+  gem 'webrat', '0.7.3'
 gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
@@ -11,14 +18,7 @@ gem 'pg'
 # sqlite3 gem is stricly for testing, comment out before committing
 gem 'sqlite3'
 
-group :development do
-  gem 'rspec-rails', '2.6.1'
-  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
-end
 
-group :test do
-  gem 'rspec-rails', '2.6.1'
-  gem 'webrat', '0.7.3'
   gem 'spork', '0.9.0.rc8'
   gem 'guard-spork'
   gem 'autotest', '4.4.6'
