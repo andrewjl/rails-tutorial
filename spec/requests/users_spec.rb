@@ -1,4 +1,6 @@
 require 'spec_helper'
+require 'database_cleaner'
+DatabaseCleaner.strategy = :truncation
 
 describe "Users" do
   
@@ -47,6 +49,7 @@ describe "Users" do
         controller.should be_signed_in
         click_link "Sign out"
         controller.should_not be_signed_in
+        DatabaseCleaner.clean
       end
     end
   end

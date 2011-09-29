@@ -1,24 +1,22 @@
 source 'http://rubygems.org'
+
 group :development do
   gem 'rspec-rails', '2.6.1'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+  gem 'gravatar_image_tag', '1.0.0.pre2'
+  gem 'faker', '0.3.1'
+  gem "will_paginate", "~> 3.0.2"
 end
 
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.3'
-gem 'rails', '3.1.0'
-
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-gem 'gravatar_image_tag', '1.0.0.pre2'
-gem 'pg'
-
+	gem 'rails', '3.1.0'
+	gem "will_paginate", "~> 3.0.2"
+	gem 'gravatar_image_tag', '1.0.0.pre2'
+	gem 'pg'
 # sqlite3 gem is stricly for testing, comment out before committing
-gem 'sqlite3'
-
-
+	gem 'sqlite3'
   gem 'spork', '0.9.0.rc8'
   gem 'guard-spork'
   gem 'autotest', '4.4.6'
@@ -26,6 +24,7 @@ gem 'sqlite3'
   gem 'autotest-fsevent', '0.2.4'
   gem 'autotest-growl', '0.2.9'
   gem 'factory_girl_rails', '1.0'
+  gem 'database_cleaner'
 end
 
 # Gems used only for assets and not required
@@ -35,15 +34,4 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
 end
-
-gem 'jquery-rails'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 
