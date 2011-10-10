@@ -1,5 +1,10 @@
 source 'http://rubygems.org'
 
+gem 'rails', '3.1.0'
+gem 'gravatar_image_tag', '1.0.0.pre2'
+gem "will_paginate", :git => 'git://github.com/mislav/will_paginate.git'
+gem 'pg'
+
 group :development do
   gem 'rspec-rails', '2.6.1'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
