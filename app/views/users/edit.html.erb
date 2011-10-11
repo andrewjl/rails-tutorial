@@ -4,26 +4,28 @@
   <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <div class="round">
+    <%= f.text_field :name, :class => 'input-styling' %>
+    </div>
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :class => 'input-styling' %>
   </div>
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.password_field :password %>
+    <%= f.password_field :password, :class => 'input-styling' %>
   </div>
   <div class="field">
     <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
+    <%= f.password_field :password_confirmation, :class => 'input-styling' %>
   </div>
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Update", :class => ' base-button' %>
   </div>
 <% end %>
-
+<br/>
 <div>
-  <%= gravatar_for @user %>
-  <a href="http://gravatar.com/emails">change</a>
+  <%= gravatar_for @user %><br/><br/>
+  <a href="http://gravatar.com/emails" class = "base-button">Change Picture</a>
 </div>
